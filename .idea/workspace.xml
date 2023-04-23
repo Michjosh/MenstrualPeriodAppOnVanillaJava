@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="124b8959-af70-41b1-bd59-3192518ccdde" name="Changes" comment="Second commit, only main method is yet to work. All test passed.">
+    <list default="true" id="124b8959-af70-41b1-bd59-3192518ccdde" name="Changes" comment="Third commit.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PresentationLayer/MainMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/MainMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +144,7 @@
       <updated>1682185182515</updated>
       <workItem from="1682185184114" duration="6553000" />
       <workItem from="1682214665098" duration="11047000" />
-      <workItem from="1682239184190" duration="11729000" />
+      <workItem from="1682239184190" duration="13594000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1682214797922</created>
@@ -168,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682250426007</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Third commit.">
+      <created>1682252418303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682252418303</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +194,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Second commit, only main method is yet to work. All test passed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit, only main method is yet to work. All test passed." />
+    <MESSAGE value="Third commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Third commit." />
   </component>
 </project>

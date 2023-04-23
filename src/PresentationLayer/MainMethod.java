@@ -5,7 +5,6 @@ import DTOs.CreateUserRequest;
 import DTOs.FindUserResponse;
 import ServiceLayer.MenstrualPeriodService;
 import ServiceLayer.MenstrualPeriodServiceImpl;
-
 import java.util.Scanner;
 
 public class MainMethod {
@@ -16,18 +15,20 @@ public class MainMethod {
     private static MenstrualPeriodService menstrualPeriodService = new MenstrualPeriodServiceImpl();
 
     public static void main(String[] args) {
-
+    startApp();
+        }
+    public static void quickCheck(){
             System.out.println("Welcome to the Menstrual Period App!");
 
             while (true) {
                 System.out.println("Please enter the date of your last period (YYYY-MM-DD):");
-                String lastPeriodDate = scanner.nextLine();
+                String lastPeriodDate = scanner.next();
 
                 System.out.println("Please enter the length of your menstrual cycle (in days):");
-                int cycleLength = Integer.parseInt(scanner.nextLine());
+                int cycleLength = Integer.parseInt(scanner.next());
 
                 System.out.println("Please enter the length of your period (in days):");
-                int periodLength = Integer.parseInt(scanner.nextLine());
+                int periodLength = Integer.parseInt(scanner.next());
 
                 String nextPeriodDate = menstrualPeriodService.calculateNextPeriodDate(lastPeriodDate, cycleLength, periodLength);
                 System.out.println("Your next period is expected on: " + nextPeriodDate);
@@ -40,30 +41,34 @@ public class MainMethod {
                 }
 
                 System.out.println("Do you want to calculate another period? (y/n)");
-                String input = scanner.nextLine();
+                String input = scanner.next();
                 if (!input.equalsIgnoreCase("y")) {
-                    break;
+                    exitApp();
+                }
+                else {
+                    quickCheck();
                 }
             }
 
-            System.out.println("Thank you for using the Menstrual Period App!");
         }
-//        startApp();
-//    }
     private static void startApp() {
         System.out.println( """
         Welcome to the Menstrual Period App!
-        1 -> Login
-        2 -> Register
-        3 -> Exit
+        1 -> QuickCheck
+        2 -> Login
+        3 -> Register
+        4 -> Exit
         """);
         try {
             int input = scanner.nextInt();
             if (input == 1) {
+                quickCheck();
+            }
+            else if (input == 2) {
                 loginUser();
-            } else if (input == 2) {
+            }else if (input == 3) {
                 registerUser();
-            } else if (input == 3) {
+            } else if (input == 4) {
                 exitApp();
             } else {
                 displayMessage("Invalid input try again");
@@ -74,8 +79,6 @@ public class MainMethod {
             startApp();
         }
     }
-
-
     private static void loginUser() {
         try {
             System.out.println("Enter Your fullName");
@@ -88,7 +91,6 @@ public class MainMethod {
             startApp();
         }
     }
-
     private static void MPApp() {
         System.out.println(  """
                 Email Menu
@@ -122,8 +124,6 @@ public class MainMethod {
             MPApp();
         }
     }
-
-
     private static void viewProfile() {
         try {
             System.out.println("Enter Your Username");
@@ -135,8 +135,6 @@ public class MainMethod {
             MPApp();
         }
     }
-
-
     private static void lastMP() {
         try {
             FindUserResponse findUserResponse = new FindUserResponse();
@@ -147,7 +145,6 @@ public class MainMethod {
             MPApp();
         }
     }
-
     private static void estimatedMP() {
         try {
             CreateUserRequest findUserResponse = new CreateUserRequest();
@@ -159,7 +156,6 @@ public class MainMethod {
             MPApp();
         }
     }
-
     private static void nextMP(){
         try {
             CreateUserRequest findUserResponse = new CreateUserRequest();
@@ -170,7 +166,6 @@ public class MainMethod {
             MPApp();
         }
     }
-
     private static void registerUser() {
         try {
             CreateUserRequest request = new CreateUserRequest();
@@ -200,14 +195,13 @@ public class MainMethod {
             startApp();
         }
     }
-
     private static void displayMessage(String message) {
         System.out.println(message);
     }
-
     private static void exitApp() {
         System.exit(1);
-        displayMessage("Good bye");
+        displayMessage("""
+    Thank you for using the Menstrual Period App,
+    Good bye!""");
     }
-
 }
