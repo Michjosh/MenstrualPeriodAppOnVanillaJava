@@ -3,6 +3,9 @@ package PresentationLayer;
 
 import DTOs.CreateUserRequest;
 import DTOs.FindUserResponse;
+import ServiceLayer.MenstrualPeriodService;
+import ServiceLayer.MenstrualPeriodServiceImpl;
+
 import java.util.Scanner;
 
 public class MainMethod {
@@ -10,11 +13,43 @@ public class MainMethod {
     private static Scanner scanner = new Scanner(System.in);
     public static UserController userController = new UserController();
     public static MPController mpController = new MPController();
-
+    private static MenstrualPeriodService menstrualPeriodService = new MenstrualPeriodServiceImpl();
 
     public static void main(String[] args) {
-        startApp();
-    }
+
+            System.out.println("Welcome to the Menstrual Period App!");
+
+            while (true) {
+                System.out.println("Please enter the date of your last period (YYYY-MM-DD):");
+                String lastPeriodDate = scanner.nextLine();
+
+                System.out.println("Please enter the length of your menstrual cycle (in days):");
+                int cycleLength = Integer.parseInt(scanner.nextLine());
+
+                System.out.println("Please enter the length of your period (in days):");
+                int periodLength = Integer.parseInt(scanner.nextLine());
+
+                String nextPeriodDate = menstrualPeriodService.calculateNextPeriodDate(lastPeriodDate, cycleLength, periodLength);
+                System.out.println("Your next period is expected on: " + nextPeriodDate);
+
+                String[] estimatedPeriodDates = menstrualPeriodService.getEstimatedPeriodDates(nextPeriodDate, cycleLength, periodLength);
+                System.out.println("Here are your estimated period dates for the 6 months:");
+
+                for (String date : estimatedPeriodDates) {
+                    System.out.println(date);
+                }
+
+                System.out.println("Do you want to calculate another period? (y/n)");
+                String input = scanner.nextLine();
+                if (!input.equalsIgnoreCase("y")) {
+                    break;
+                }
+            }
+
+            System.out.println("Thank you for using the Menstrual Period App!");
+        }
+//        startApp();
+//    }
     private static void startApp() {
         System.out.println( """
         Welcome to the Menstrual Period App!
