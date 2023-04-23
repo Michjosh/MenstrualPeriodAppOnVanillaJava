@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="124b8959-af70-41b1-bd59-3192518ccdde" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/DTOs/CreateUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DTOs/FindUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataLayer/Repo/UserRepoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataLayer/Repo/UserRepoInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PresentationLayer/MPController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PresentationLayer/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/UserServiceImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/UserServiceInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tdd/MenstrualServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tdd/UserRepoImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/tdd/UserServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenstrualCycleApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MenstrualCycleApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataLayer/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataLayer/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/MenstrualPeriodApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/MenstrualPeriodApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodServiceImpl.java" afterDir="false" />
+    <list default="true" id="124b8959-af70-41b1-bd59-3192518ccdde" name="Changes" comment="Second commit, only main method is yet to work. All test passed.">
+      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/MenstrualPeriodApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/MainMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +49,8 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.UserServiceImplTest.test_findUserById">
-    <configuration name="MenstrualPeriodApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PresentationLayer.MenstrualPeriodApp" />
+    <configuration name="MainMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PresentationLayer.MainMethod" />
       <module name="MenstrualCycleApp" />
       <extension name="coverage">
         <pattern>
@@ -143,7 +126,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserServiceImplTest.test_findUserById" />
-        <item itemvalue="Application.MenstrualPeriodApp" />
+        <item itemvalue="Application.MainMethod" />
         <item itemvalue="JUnit.MenstrualServiceImplTest" />
         <item itemvalue="JUnit.UserRepoImplTest" />
         <item itemvalue="JUnit.UserServiceImplTest" />
@@ -160,7 +143,7 @@
       <updated>1682185182515</updated>
       <workItem from="1682185184114" duration="6553000" />
       <workItem from="1682214665098" duration="11047000" />
-      <workItem from="1682239184190" duration="10794000" />
+      <workItem from="1682239184190" duration="11132000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1682214797922</created>
@@ -169,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682214797922</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second commit, only main method is yet to work. All test passed.">
+      <created>1682250257497</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682250257497</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +178,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Second commit, only main method is yet to work. All test passed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit, only main method is yet to work. All test passed." />
   </component>
 </project>

@@ -5,7 +5,7 @@ import DTOs.CreateUserRequest;
 import DTOs.FindUserResponse;
 import java.util.Scanner;
 
-public class MenstrualPeriodApp {
+public class MainMethod {
 
     private static Scanner scanner = new Scanner(System.in);
     public static UserController userController = new UserController();
