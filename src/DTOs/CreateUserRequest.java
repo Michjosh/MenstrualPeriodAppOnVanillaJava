@@ -1,8 +1,6 @@
-package DataLayer.Model;
+package DTOs;
 
-import java.time.LocalDate;
-
-public class User {
+public class CreateUserRequest {
 
     private int id;
     private String fullName;
@@ -10,7 +8,6 @@ public class User {
     private CharSequence dateOfLastPeriod;
     private int lengthOfCycle;
     private int lengthOfPeriod;
-
 
     public int getId() {
         return id;
@@ -60,15 +57,4 @@ public class User {
         this.lengthOfPeriod = lengthOfPeriod;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", fullName='" + fullName + '\'' +
-                ", email='" + email + '\'' +
-                ", dateOfLastPeriod=" + dateOfLastPeriod +
-                ", lengthOfCycle=" + lengthOfCycle +
-                ", lengthOfPeriod=" + lengthOfPeriod +
-                '}';
-    }
 }

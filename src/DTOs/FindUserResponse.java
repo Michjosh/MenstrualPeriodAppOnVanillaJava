@@ -1,24 +1,13 @@
-package DataLayer.Model;
+package DTOs;
 
 import java.time.LocalDate;
 
-public class User {
-
-    private int id;
+public class FindUserResponse {
     private String fullName;
     private String email;
     private CharSequence dateOfLastPeriod;
     private int lengthOfCycle;
     private int lengthOfPeriod;
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getFullName() {
         return fullName;
@@ -31,7 +20,6 @@ public class User {
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
@@ -62,9 +50,8 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", fullName='" + fullName + '\'' +
+        return "FindUserResponse{" +
+                "fullName='" + fullName + '\'' +
                 ", email='" + email + '\'' +
                 ", dateOfLastPeriod=" + dateOfLastPeriod +
                 ", lengthOfCycle=" + lengthOfCycle +

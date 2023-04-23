@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="124b8959-af70-41b1-bd59-3192518ccdde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MenstrualCycleApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataLayer/Model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PresentationLayer/MenstrualPeriodApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodServiceImpl.java" afterDir="false" />
+    <list default="true" id="124b8959-af70-41b1-bd59-3192518ccdde" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/DTOs/CreateUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DTOs/FindUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataLayer/Repo/UserRepoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataLayer/Repo/UserRepoInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PresentationLayer/MPController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PresentationLayer/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/UserServiceImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ServiceLayer/UserServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/tdd/MenstrualServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/tdd/UserRepoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/tdd/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenstrualCycleApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MenstrualCycleApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataLayer/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataLayer/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PresentationLayer/MenstrualPeriodApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PresentationLayer/MenstrualPeriodApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServiceLayer/MenstrualPeriodServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,13 +49,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/DELL/IdeaProjects/MenstrualCycleApp"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="DataLayer.Repo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserServiceImplTest.test_findUserById">
     <configuration name="MenstrualPeriodApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PresentationLayer.MenstrualPeriodApp" />
       <module name="MenstrualCycleApp" />
@@ -62,9 +79,74 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MenstrualServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MenstrualCycleApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.MenstrualServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MenstrualCycleApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.UserRepoImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MenstrualCycleApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.UserServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.test_findUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MenstrualCycleApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="test_findUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceImplTest.test_findUserById" />
         <item itemvalue="Application.MenstrualPeriodApp" />
+        <item itemvalue="JUnit.MenstrualServiceImplTest" />
+        <item itemvalue="JUnit.UserRepoImplTest" />
+        <item itemvalue="JUnit.UserServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -77,7 +159,17 @@
       <option name="presentableId" value="Default" />
       <updated>1682185182515</updated>
       <workItem from="1682185184114" duration="6553000" />
+      <workItem from="1682214665098" duration="11047000" />
+      <workItem from="1682239184190" duration="10794000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1682214797922</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682214797922</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,5 +185,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
